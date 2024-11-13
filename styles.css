@@ -1,28 +1,35 @@
 body {
     margin: 0;
-}
-
-.wrapper{
     background-color: #1F2937;
 }
 
-h2{
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+
+h1{
     font-family: "karla", sans-serif;
     font-weight: bolder;
-}
-
-#hOne{
     color:#ffffff ;
-
+    font-weight: 900;
+    margin: 0px 0px 0px 0px;
 }
-#hTwo{
+.second-line {
+    display: block; /* Forces it to start on a new line */
     color: #4ADF86;
+    font-weight: 900;
+    
 }
 
 #tag-line{
     font-family: "inter", sans-serif;
-    font-size: 20px;
-    color: #ffffff;
+    color: #D5D4D8;
+    margin: 10px 0px 40px 0px;
 }
 
 button{
@@ -33,4 +40,29 @@ button{
     padding: 10px 10px 10px 10px;
     border: none;
 
+}
+
+
+/*Second section*/
+
+.output {
+    display: flex;
+    border: 10px 0px 0px solid #10B981;
+    border-radius: 5px; 
+    align-items: center;
+    justify-content: center;
+}
+#passwordOne {
+    margin: 50px 15px 0px 15px;
+    background-color: #273549;
+    color: #10B981;
+    padding: 10px 70px 10px 60px;
+    border-radius: 5px;
+}
+#passwordTwo {
+    margin: 50px 15px 0px 15px;
+    background-color: #273549;
+    color: #10B981;
+    padding: 10px 60px 10px 60px;
+    border-radius: 5px;
 }
