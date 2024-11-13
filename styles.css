@@ -40,8 +40,19 @@ button{
     padding: 10px 10px 10px 10px;
     border: none;
     margin-bottom: 30px;
-
+    cursor: pointer;
 }
+button:hover {
+    border: 1px solid #ffffff;
+    
+}
+button:active {
+    background-color: #02442e;
+    color: #D5D4D8;
+    transition: 0.1s;
+}
+
+
 
 
 /*Second section*/
