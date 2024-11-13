@@ -39,46 +39,36 @@ button{
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     border: none;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }
 
 
 /*Second section*/
 
-.line {
-    border-top: 1px solid #273549;
-    
-}
-
 .output {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Vertically centers button and text boxes */
+    gap: 20px; /* Adds spacing between the button and each text box */
 }
 
-.textBox1{
+.line {
+    border-top: 1px solid #273549;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.textBox1,
+.textBox2 {
     background-color: #273549;
     border-radius: 5px;
-    padding: 10px 40px 10px 40px;
-    margin: 40px 20px 10px 10px;
-    
+    padding: 10px 40px;
+    margin: 20px 0px 20px 0px;
+   
 }
 
 
-.textBox2{
-    background-color: #273549;
-    border-radius: 5px;
-    padding: 10px 40px 10px 40px;
-    margin: 20px 20px 10px 10px;
-}
-
-#passwordOne {
-    color: #10B981;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-}
-
-#passwordTwo {
+#passwordOne,#passwordTwo {
     color: #10B981;
     margin: 0px 0px 0px 0px;
     padding: 0px;
