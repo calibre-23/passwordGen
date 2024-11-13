@@ -4,14 +4,21 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let rpassword1 = document.getElementById("passwordOne")
 let rpassword2 = document.getElementById("passwordTwo")
 
-function randomPassword1(){
-    let password1 = "";
-    for (let i = 0; i < 15; i++) {
-        password += characters[Math.floor(Math.random() * characters.length)];
-    }
-    return password1;
+function randomPassword(){
+    randomPassword1()
+    randomPassword2()
 }
 
+function randomPassword1() {
+    let password1 = "";  // Initialize the empty string for the password
+    
+    for (let i = 0; i < 15; i++) {
+        password1 += characters[Math.floor(Math.random() * characters.length)];  // Use password1 instead of password
+    }
+    
+    rpassword1.textContent = password1;  // Corrected rpassword1 instead of rpassword11
+    return password1;
+}
 
 function randomPassword2() {
     let password2 = "";  // Initialize the empty string for the password
