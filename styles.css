@@ -39,30 +39,47 @@ button{
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     border: none;
+    margin-bottom: 40px;
 
 }
 
 
 /*Second section*/
 
+.line {
+    border-top: 1px solid #273549;
+    
+}
+
 .output {
     display: flex;
-    border: 10px 0px 0px solid #10B981;
-    border-radius: 5px; 
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
 }
+
+.textBox1{
+    background-color: #273549;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    margin: 40px 20px 10px 10px;
+    
+}
+
+
+.textBox2{
+    background-color: #273549;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    margin: 20px 20px 10px 10px;
+}
+
 #passwordOne {
-    margin: 50px 15px 0px 15px;
-    background-color: #273549;
     color: #10B981;
-    padding: 10px 70px 10px 60px;
-    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
 }
+
 #passwordTwo {
-    margin: 50px 15px 0px 15px;
-    background-color: #273549;
     color: #10B981;
-    padding: 10px 60px 10px 60px;
-    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
 }
