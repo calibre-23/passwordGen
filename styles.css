@@ -29,7 +29,7 @@ h1{
 #tag-line{
     font-family: "inter", sans-serif;
     color: #D5D4D8;
-    margin: 10px 0px 40px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 button{
@@ -84,4 +84,15 @@ button:active {
     color: #10B981;
     margin: 0px 0px 0px 0px;
     padding: 0px;
+}
+
+
+
+/*password length section*/
+
+#displayLength{
+    font-family: "inter", sans-serif;
+    color: #D5D4D8;
+    font-size: small;
+    
 }
