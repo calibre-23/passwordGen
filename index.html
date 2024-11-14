@@ -24,18 +24,22 @@
         <p id="tag-line">Never use an insecure password again.</p>
         <div> 
           <p id="displayLength">Password length: 0</p>
-        <button onclick="addOne()">+1</button>
-        <button onclick="minusOne()">-1</button>
-        
+        <button class="btn" onclick="addOne()">+1</button>
+        <button class="btn" onclick="minusOne()">-1</button>
       </div>
-      <button onclick="randomPassword()">Generate passwords</button>
+      <div>
+        <p id="displayAll">Include Numbers and Symbols?</p>
+        <button class="btn1" onclick="toggleAll()">Symbols?</button>
+        <button class="btn1" onclick="toggleAll()">Number?</button>
+      </div>
+      <button class="btn" onclick="randomPassword()">Generate passwords</button>
             <div class="line">
             <div class="output">
             <div class="textBox1">
-            <p id="passwordOne">>nfJjy!dDvR&ial</p>
+            <button id="passwordOne" onclick="copyPassword('passwordOne')">>nfJjy!dDvR&ial</button>
             </div>
          <div class="textBox2">
-            <p id="passwordTwo">>nfJjy!dDvR&ial</p>
+            <button id="passwordTwo" onclick="copyPassword('passwordTwo')">>nfJjy!dDvR&ial</button>
         </div>
         </div>
         </div>

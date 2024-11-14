@@ -1,6 +1,7 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 
+
 let rpassword1 = document.getElementById("passwordOne")
 let rpassword2 = document.getElementById("passwordTwo")
 let addition=0;
@@ -46,4 +47,25 @@ function minusOne(){
     addition -= 1;
     document.getElementById("displayLength").textContent = "Password length: " + addition;
 }
+}
+
+function copyPassword(id){
+    let button=document.getElementById(id)
+    let textToCopy=button.textContent|| button.innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => alert('Text copied to clipboard'))
+        .catch(err => alert('Something went wrong', err));
+}
+
+
+function change () {
+    change1() 
+    change2()
+}
+
+function change1 (){
+    let characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",];
+}
+function change2 (){
+    let characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 }

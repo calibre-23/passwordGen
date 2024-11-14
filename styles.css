@@ -32,7 +32,7 @@ h1{
     margin: 10px 0px 20px 0px;
 }
 
-button{
+.btn{
     font-family: "inter", sans-serif;
     background-color: #10B981;
     color: #ffffff;
@@ -42,11 +42,11 @@ button{
     margin-bottom: 20px;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     border: 1px solid #ffffff;
     
 }
-button:active {
+.btn:active {
     background-color: #02442e;
     color: #D5D4D8;
     transition: 0.1s;
@@ -83,9 +83,20 @@ button:active {
 #passwordOne,#passwordTwo {
     color: #10B981;
     margin: 0px 0px 0px 0px;
-    padding: 0px;
+    padding: 10px;
+    background-color:green ;
+    border: 10px solid pink
 }
 
+#passwordOne:hover, #passwordTwo:hover {
+    border: 1px solid #ffffff;
+    
+}
+#passwordOne:hover:active, #passwordTwo:hover:active  {
+    background-color: #02442e;
+    color: #D5D4D8;
+    transition: 0.1s;
+}
 
 
 /*password length section*/
