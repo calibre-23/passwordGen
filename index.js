@@ -3,6 +3,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let rpassword1 = document.getElementById("passwordOne")
 let rpassword2 = document.getElementById("passwordTwo")
+let addition=0;
+document.getElementById("displayLength").textContent=addition
+
+
 
 function randomPassword(){
     randomPassword1()
@@ -11,11 +15,9 @@ function randomPassword(){
 
 function randomPassword1() {
     let password1 = "";  // Initialize the empty string for the password
-    
     for (let i = 0; i < 15; i++) {
         password1 += characters[Math.floor(Math.random() * characters.length)];  // Use password1 instead of password
     }
-    
     rpassword1.textContent = password1;  // Corrected rpassword1 instead of rpassword11
     return password1;
 }
@@ -29,4 +31,17 @@ function randomPassword2() {
     
     rpassword2.textContent = password2;  // Corrected rpassword2 instead of rpassword12
     return password2;
+}
+
+function addOne() {
+    if (addition <=15){
+    addition += 1;
+    document.getElementById("displayLength").textContent = addition;
+    }
+
+}
+
+function minusOne(){
+    addition -= 1;
+    document.getElementById("displayLength").textContent = addition;
 }
